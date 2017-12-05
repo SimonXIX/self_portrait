@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+# @name: index.html
+# @version: 0.1
+# @license: The MIT License <https://opensource.org/licenses/MIT>
+# @purpose: Produce self-portraits
+# @author: Simon Barron <simonxix@riseup.net>
+# @acknowledgements: 
+-->
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>self-portrait</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">self-portrait</h1>
+              <p class="intro-text">A piece exploring self-perceptions</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>who you are</h2>
+              <p>please choose who you are</p>
+              <form action="self_portrait.php" method="POST">
+                <label>Species:</label>
+                <select name="species" required>
+                  <option selected="selected" value="">Please choose</option>
+                  <option value="human">Human</option>
+                  <option value="dog">Dog</option>
+                </select>
+				<br/><br/>
+                <label>Sex:</label>
+                <select name="sex" required>
+                  <option selected="selected" value="">Please choose</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+				  <option value="intersex">Intersex</option>
+                </select>
+				<br/><br/>
+                <label>Gender:</label>
+                <select name="gender" required>
+                  <option selected="selected" value="">Please choose</option>
+                  <option value="woman">Woman</option>
+				  <option value="non">Non-binary</option>
+                  <option value="man">Man</option>
+                </select>
+				<br/><br/>
+                <label>Hair:</label>
+                <select name="hair" required>
+                  <option selected="selected" value="">Please choose</option>
+                  <option value="long">Long</option>
+				  <option value="short">Short</option>
+                  <option value="none">None</option>
+                </select>
+				<br/><br/>
+                  <div>
+                    <input type="submit" name="submit" value="Submit">
+                  </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+           <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <span resource="[_:publisher]" rel="dct:publisher">
+    <span property="dct:title">Simon Barron</span></span>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title">'self-portrait'</span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="GB" about="[_:publisher]">
+  United Kingdom</span>.
+</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
+</html>
